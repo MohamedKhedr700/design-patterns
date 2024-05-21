@@ -18,11 +18,11 @@ class AbstractFactoryHandler
         return $this->factory;
     }
 
-    public function runAnimals(): array
+    public function run(): array
     {
         return [
-            'cat' => $this->getFactory()->runCat(),
-            'dog' => $this->getFactory()->runDog(),
+            'cat' => $this->getFactory()->createCat()->run(),
+            'dog' => $this->getFactory()->createDog()->run(),
         ];
     }
 }

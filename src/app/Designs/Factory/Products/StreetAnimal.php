@@ -4,10 +4,10 @@ namespace App\Designs\Factory\Products;
 
 use App\Designs\Factory\Products\Contracts\Animal;
 
-class HomeCat implements Animal
+class StreetAnimal implements Animal
 {
     public function run(): string
     {
-        return 'Home cat is running';
+        return 'Street animal is running';
     }
 }
