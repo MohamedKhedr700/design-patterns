@@ -3,8 +3,8 @@
 namespace App\Designs\AbstractFactory\Factories;
 
 use App\Designs\AbstractFactory\Factories\Contracts\AnimalFactory;
-use App\Designs\AbstractFactory\HomeCat;
-use App\Designs\AbstractFactory\HomeDog;
+use App\Designs\AbstractFactory\Products\HomeCat;
+use App\Designs\AbstractFactory\Products\HomeDog;
 
 class HomeAnimalFactory implements AnimalFactory
 {

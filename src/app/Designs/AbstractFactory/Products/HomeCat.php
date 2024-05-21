@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Designs\AbstractFactory;
+namespace App\Designs\AbstractFactory\Products;
 
 use App\Designs\AbstractFactory\Products\Contracts\Cat;
 
