@@ -2,16 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Designs\AbstractFactory\Contracts\AnimalFactory;
-use App\Designs\AbstractFactory\Factories\AbstractAnimalFactory;
-use App\Designs\AbstractFactory\Factories\HomeAnimalFactory;
-use App\Designs\AbstractFactory\Factories\StreetAnimalFactory;
+use App\Designs\AbstractFactory\Client\AnimalManager;
 use Illuminate\Http\JsonResponse;
 
 class AbstractFactoryController extends Controller
 {
-    public function __invoke(AbstractAnimalFactory $factory): JsonResponse
+    public function __invoke(AnimalManager $manager): JsonResponse
     {
-        return response()->json($factory->run());
+        return response()->json($manager->run());
     }
 }

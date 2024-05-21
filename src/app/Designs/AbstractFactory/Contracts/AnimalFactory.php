@@ -4,5 +4,7 @@ namespace App\Designs\AbstractFactory\Contracts;
 
 interface AnimalFactory
 {
-    public function run(): array;
+    public function runCat(): string;
+
+    public function runDog(): string;
 }

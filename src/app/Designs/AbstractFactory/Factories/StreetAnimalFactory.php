@@ -10,11 +10,13 @@ use App\Designs\AbstractFactory\StreetDog;
 
 class StreetAnimalFactory implements AnimalFactory
 {
-    public function run(): array
+    public function runCat(): string
     {
-        return [
-            (new StreetCat())->run(),
-            (new StreetDog())->run(),
-        ];
+        return (new StreetCat())->run();
+    }
+
+    public function runDog(): string
+    {
+        return (new StreetCat())->run();
     }
 }
