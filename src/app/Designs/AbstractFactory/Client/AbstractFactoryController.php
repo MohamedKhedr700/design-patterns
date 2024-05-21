@@ -12,12 +12,16 @@ class AbstractFactoryController extends Controller
     {
         $handler->setFactory(new HomeAnimalFactory());
 
-        echo '<pre>'; print_r($handler->run()); echo '</pre>';
+        echo '<pre>';
+        print_r($handler->run());
+        echo '</pre>';
 
         $handler->setFactory(new StreetAnimalFactory());
 
         echo '</br>';
 
-        echo '<pre>'; print_r($handler->run()); echo '</pre>';
+        echo '<pre>';
+        print_r($handler->run());
+        echo '</pre>';
     }
 }
