@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Designs\AbstractFactory\Contracts;
+namespace App\Designs\AbstractFactory\Products\Contracts;
 
 interface Cat
 {

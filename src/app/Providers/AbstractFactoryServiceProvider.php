@@ -2,10 +2,8 @@
 
 namespace App\Providers;
 
-use App\Designs\AbstractFactory\Client\AnimalManager;
-use App\Designs\AbstractFactory\Contracts\AnimalFactory;
+use App\Designs\AbstractFactory\Factories\Contracts\AnimalFactory;
 use App\Designs\AbstractFactory\Factories\HomeAnimalFactory;
-use App\Designs\AbstractFactory\Factories\StreetAnimalFactory;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 

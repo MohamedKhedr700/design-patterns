@@ -2,10 +2,9 @@
 
 namespace App\Designs\AbstractFactory\Client;
 
-use App\Designs\AbstractFactory\Contracts\AnimalFactory;
-use App\Designs\AbstractFactory\Factories\StreetAnimalFactory;
+use App\Designs\AbstractFactory\Factories\Contracts\AnimalFactory;
 
-class AnimalManager
+class AnimalHandler
 {
     private AnimalFactory $factory;
 

@@ -2,8 +2,7 @@
 
 namespace App\Designs\AbstractFactory;
 
-use App\Designs\AbstractFactory\Contracts\Cat;
-use App\Designs\AbstractFactory\Contracts\Dog;
+use App\Designs\AbstractFactory\Products\Contracts\Cat;
 
 class StreetCat implements Cat
 {

@@ -2,7 +2,7 @@
 
 namespace App\Designs\AbstractFactory\Factories;
 
-use App\Designs\AbstractFactory\Contracts\AnimalFactory;
+use App\Designs\AbstractFactory\Factories\Contracts\AnimalFactory;
 use App\Designs\AbstractFactory\HomeCat;
 use App\Designs\AbstractFactory\HomeDog;
 
