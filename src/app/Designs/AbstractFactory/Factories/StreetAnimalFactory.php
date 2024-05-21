@@ -4,6 +4,7 @@ namespace App\Designs\AbstractFactory\Factories;
 
 use App\Designs\AbstractFactory\Factories\Contracts\AnimalFactory;
 use App\Designs\AbstractFactory\Products\StreetCat;
+use App\Designs\AbstractFactory\Products\StreetDog;
 
 class StreetAnimalFactory implements AnimalFactory
 {
@@ -14,6 +15,6 @@ class StreetAnimalFactory implements AnimalFactory
 
     public function runDog(): string
     {
-        return (new StreetCat())->run();
+        return (new StreetDog())->run();
     }
 }
