@@ -21,28 +21,28 @@ class AnimalBuilder implements AnimalBuilderContract
         return $this;
     }
 
-    public function head(string $head) : static
+    public function head(string $head): static
     {
         $this->animal->head = $head;
 
         return $this;
     }
 
-    public function body(string $body) : static
+    public function body(string $body): static
     {
         $this->animal->body = $body;
 
         return $this;
     }
 
-    public function arms(string $arms) : static
+    public function arms(string $arms): static
     {
         $this->animal->arms = $arms;
 
         return $this;
     }
 
-    public function legs(string $legs) : static
+    public function legs(string $legs): static
     {
         $this->animal->legs = $legs;
 
