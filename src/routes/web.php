@@ -1,10 +1,10 @@
 <?php
 
-use App\Designs\AbstractFactory\Client\AbstractFactoryController;
-use App\Designs\Builder\Client\BuilderController;
-use App\Designs\Factory\Client\FactoryController;
-use App\Designs\Prototype\Client\PrototypeController;
-use App\Designs\Singleton\Client\SingletonController;
+use App\Designs\Creational\AbstractFactory\Client\AbstractFactoryController;
+use App\Designs\Creational\Builder\Client\BuilderController;
+use App\Designs\Creational\Factory\Client\FactoryController;
+use App\Designs\Creational\Prototype\Client\PrototypeController;
+use App\Designs\Creational\Singleton\Client\SingletonController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
