@@ -13,7 +13,9 @@ class AbstractFactoryController extends Controller
         $handler->setFactory(new HomeAnimalFactory());
 
         echo '<pre>';
+
         print_r($handler->run());
+
         echo '</pre>';
 
         $handler->setFactory(new StreetAnimalFactory());
@@ -21,7 +23,9 @@ class AbstractFactoryController extends Controller
         echo '</br>';
 
         echo '<pre>';
+
         print_r($handler->run());
+
         echo '</pre>';
     }
 }

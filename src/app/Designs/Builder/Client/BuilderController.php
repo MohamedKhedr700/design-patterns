@@ -16,7 +16,9 @@ class BuilderController extends Controller
         $director = new CatDirector($builder);
 
         echo '<pre>';
+
         print_r((string) $director->build());
+
         echo '</pre>';
 
         $builder->reset();
@@ -24,7 +26,9 @@ class BuilderController extends Controller
         $director = new DogDirector($builder);
 
         echo '<pre>';
+
         print_r((string) $director->build());
+
         echo '</pre>';
     }
 }
