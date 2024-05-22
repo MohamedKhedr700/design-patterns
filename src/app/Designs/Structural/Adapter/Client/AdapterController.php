@@ -2,9 +2,6 @@
 
 namespace App\Designs\Structural\Adapter\Client;
 
-use App\Designs\Creational\AbstractFactory\Client\AbstractFactoryHandler;
-use App\Designs\Creational\AbstractFactory\Factories\HomeAnimalFactory;
-use App\Designs\Creational\AbstractFactory\Factories\StreetAnimalFactory;
 use App\Designs\Structural\Adapter\Adapters\CatAdapter;
 use App\Designs\Structural\Adapter\Products\HomeCat;
 use App\Designs\Structural\Adapter\Products\StreetCat;
