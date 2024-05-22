@@ -13,14 +13,10 @@ class PrototypeController extends Controller
 
         $clonedCat = clone $cat;
 
-        echo '<pre>';
-
-        print_r((string) $cat);
-
-        echo '</br>';
-
-        print_r((string) $clonedCat);
-
-        echo '</pre>';
+        pre_output(
+            (string) $cat,
+            '<br>',
+            (string) $clonedCat,
+        );
     }
 }

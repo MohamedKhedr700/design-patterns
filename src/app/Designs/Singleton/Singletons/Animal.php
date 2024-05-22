@@ -15,4 +15,11 @@ class Animal extends Singleton
     {
         return $this->animal;
     }
+
+    public function __toString()
+    {
+        return
+        'Animal is '.
+        $this->getAnimal();
+    }
 }

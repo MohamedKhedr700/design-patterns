@@ -12,20 +12,14 @@ class FactoryController extends Controller
     {
         $handler->setFactory(new HomeAnimalFactory());
 
-        echo '<pre>';
-
-        print_r($handler->runAnimal());
-
-        echo '</pre>';
+        pre_output(
+            $handler->runAnimal(),
+        );
 
         $handler->setFactory(new StreetAnimalFactory());
 
-        echo '</br>';
-
-        echo '<pre>';
-
-        print_r($handler->runAnimal());
-
-        echo '</pre>';
+        pre_output(
+            $handler->runAnimal(),
+        );
     }
 }

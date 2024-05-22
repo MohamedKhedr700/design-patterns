@@ -15,20 +15,16 @@ class BuilderController extends Controller
 
         $director = new CatDirector($builder);
 
-        echo '<pre>';
-
-        print_r((string) $director->build());
-
-        echo '</pre>';
+        pre_output(
+            (string) $director->build(),
+        );
 
         $builder->reset();
 
         $director = new DogDirector($builder);
 
-        echo '<pre>';
-
-        print_r((string) $director->build());
-
-        echo '</pre>';
+        pre_output(
+            (string) $director->build(),
+        );
     }
 }

@@ -13,18 +13,16 @@ class SingletonController extends Controller
 
         $animal->setAnimal('Cat');
 
-        echo '<pre>';
-
-        echo $animal->getAnimal();
-
-        echo '</br>';
+        pre_output(
+            (string) $animal,
+        );
 
         $animal = Animal::getInstance();
 
         $animal->setAnimal('Dog');
 
-        echo $animal->getAnimal();
-
-        echo '</pre>';
+        pre_output(
+            (string) $animal,
+        );
     }
 }
