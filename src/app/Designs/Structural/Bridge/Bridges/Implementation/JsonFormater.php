@@ -7,7 +7,6 @@ use App\Designs\Structural\Bridge\Products\Cat;
 
 class JsonFormater implements Formatter
 {
-
     public function format(Cat $cat): string
     {
         return json_encode([

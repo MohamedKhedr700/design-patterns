@@ -2,9 +2,6 @@
 
 namespace App\Designs\Structural\Bridge\Client;
 
-use App\Designs\Structural\Adapter\Adapters\CatAdapter;
-use App\Designs\Structural\Adapter\Products\HomeCat;
-use App\Designs\Structural\Adapter\Products\StreetCat;
 use App\Designs\Structural\Bridge\Bridges\Abstraction\Renderer;
 use App\Designs\Structural\Bridge\Bridges\Implementation\HtmlFormater;
 use App\Designs\Structural\Bridge\Bridges\Implementation\JsonFormater;
@@ -27,7 +24,6 @@ class BridgeController extends Controller
         pre_output(
             $bridge->render($cat),
         );
-
 
         $formater = new JsonFormater();
 

@@ -2,7 +2,6 @@
 
 namespace App\Designs\Structural\Adapter\Adapters;
 
-use App\Designs\Structural\Adapter\Products\Cat;
 use App\Designs\Structural\Adapter\Products\Contracts\HomeCat;
 use App\Designs\Structural\Adapter\Products\Contracts\StreetCat;
 
