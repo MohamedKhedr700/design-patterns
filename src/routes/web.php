@@ -1,13 +1,13 @@
 <?php
 
-use App\Designs\Creational\AbstractFactory\Client\AbstractFactoryController;
-use App\Designs\Creational\Builder\Client\BuilderController;
-use App\Designs\Creational\Factory\Client\FactoryController;
-use App\Designs\Creational\Prototype\Client\PrototypeController;
-use App\Designs\Creational\Singleton\Client\SingletonController;
-use App\Designs\Structural\Adapter\Client\AdapterController;
-use App\Designs\Structural\Bridge\Client\BridgeController;
-use App\Designs\Structural\Composite\Client\CompositeController;
+use App\Patterns\Creational\AbstractFactory\Client\AbstractFactoryController;
+use App\Patterns\Creational\Builder\Client\BuilderController;
+use App\Patterns\Creational\Factory\Client\FactoryController;
+use App\Patterns\Creational\Prototype\Client\PrototypeController;
+use App\Patterns\Creational\Singleton\Client\SingletonController;
+use App\Patterns\Structural\Adapter\Client\AdapterController;
+use App\Patterns\Structural\Bridge\Client\BridgeController;
+use App\Patterns\Structural\Composite\Client\CompositeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
