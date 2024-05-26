@@ -3,7 +3,7 @@
 namespace App\Patterns\Structural\Bridge\Bridges\Abstraction\Contracts;
 
 use App\Patterns\Structural\Bridge\Bridges\Implementation\Contracts\Formatter;
-use App\Patterns\Structural\Bridge\Entities\Cat;
+use App\Patterns\Structural\Bridge\Entities\Animal;
 
 interface Renderer
 {
@@ -11,5 +11,5 @@ interface Renderer
 
     public function getFormater(): Formatter;
 
-    public function render(Cat $cat): string;
+    public function render(Animal $animal): string;
 }

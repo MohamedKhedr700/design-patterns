@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Structural\Bridge\Entities;
 
-class Cat
+class Animal
 {
     private string $name;
 

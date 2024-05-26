@@ -6,13 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Patterns\Structural\Bridge\Bridges\Abstraction\Renderer;
 use App\Patterns\Structural\Bridge\Bridges\Implementation\HtmlFormater;
 use App\Patterns\Structural\Bridge\Bridges\Implementation\JsonFormater;
-use App\Patterns\Structural\Bridge\Entities\Cat;
+use App\Patterns\Structural\Bridge\Entities\Animal;
 
 class BridgeController extends Controller
 {
     public function __invoke(): void
     {
-        $cat = new Cat(
+        $animal = new Animal(
             fake()->name(),
             fake()->colorName(),
         );
@@ -22,7 +22,7 @@ class BridgeController extends Controller
         $bridge = new Renderer($formater);
 
         pre_output(
-            $bridge->render($cat),
+            $bridge->render($animal),
         );
 
         $formater = new JsonFormater();
@@ -30,7 +30,7 @@ class BridgeController extends Controller
         $bridge->setFormater($formater);
 
         pre_output(
-            $bridge->render($cat),
+            $bridge->render($animal),
         );
     }
 }

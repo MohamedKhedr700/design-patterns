@@ -4,7 +4,7 @@ namespace App\Patterns\Structural\Bridge\Bridges\Abstraction;
 
 use App\Patterns\Structural\Bridge\Bridges\Abstraction\Contracts\Renderer as RendererContract;
 use App\Patterns\Structural\Bridge\Bridges\Implementation\Contracts\Formatter;
-use App\Patterns\Structural\Bridge\Entities\Cat;
+use App\Patterns\Structural\Bridge\Entities\Animal;
 
 class Renderer implements RendererContract
 {
@@ -25,8 +25,8 @@ class Renderer implements RendererContract
         return $this->formatter;
     }
 
-    public function render(Cat $cat): string
+    public function render(Animal $animal): string
     {
-        return $this->getFormater()->format($cat);
+        return $this->getFormater()->format($animal);
     }
 }
