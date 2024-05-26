@@ -4,8 +4,8 @@ namespace App\Patterns\Structural\Composite\Client;
 
 use App\Http\Controllers\Controller;
 use App\Patterns\Structural\Composite\Entities\HomeAnimal;
-use App\Patterns\Structural\Composite\Entities\Zone;
 use App\Patterns\Structural\Composite\Entities\StreetAnimal;
+use App\Patterns\Structural\Composite\Entities\Zone;
 
 class CompositeController extends Controller
 {
@@ -19,7 +19,7 @@ class CompositeController extends Controller
 
         $zone->setAnimals([
             $homeAnimal,
-            $streetAnimal
+            $streetAnimal,
         ]);
 
         pre_output(

@@ -6,7 +6,6 @@ use App\Patterns\Structural\Proxy\Entities\Contracts\Animal;
 
 class AnimalService implements Animal
 {
-
     public function list(): array
     {
         return [

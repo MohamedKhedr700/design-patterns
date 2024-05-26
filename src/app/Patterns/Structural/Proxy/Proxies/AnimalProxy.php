@@ -42,6 +42,6 @@ class AnimalProxy implements Animal
 
     private function logAccess(): void
     {
-        Log::info('Animal service accessed at: ' . now()->toIso8601String());
+        Log::info('Animal service accessed at: '.now()->toIso8601String());
     }
 }

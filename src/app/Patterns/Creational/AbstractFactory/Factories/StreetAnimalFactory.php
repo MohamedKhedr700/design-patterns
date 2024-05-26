@@ -2,11 +2,11 @@
 
 namespace App\Patterns\Creational\AbstractFactory\Factories;
 
-use App\Patterns\Creational\AbstractFactory\Factories\Contracts\AnimalFactory;
 use App\Patterns\Creational\AbstractFactory\Entities\Contracts\Cat;
 use App\Patterns\Creational\AbstractFactory\Entities\Contracts\Dog;
 use App\Patterns\Creational\AbstractFactory\Entities\StreetCat;
 use App\Patterns\Creational\AbstractFactory\Entities\StreetDog;
+use App\Patterns\Creational\AbstractFactory\Factories\Contracts\AnimalFactory;
 
 class StreetAnimalFactory implements AnimalFactory
 {
