@@ -3,8 +3,9 @@
 namespace App\Patterns\Structural\Composite\Entities;
 
 use App\Patterns\Structural\Composite\Composites\Contracts\Renderable;
+use App\Patterns\Structural\Composite\Entities\Contracts\Animal;
 
-class HomeCat implements Renderable
+class StreetAnimal implements Animal, Renderable
 {
     private string $name;
 
@@ -20,6 +21,6 @@ class HomeCat implements Renderable
 
     public function render(): string
     {
-        return 'Cat '.$this->getName().' in the house';
+        return 'Cat '.$this->getName().' in the street.';
     }
 }

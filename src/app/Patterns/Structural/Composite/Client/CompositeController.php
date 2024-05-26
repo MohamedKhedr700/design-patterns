@@ -3,26 +3,27 @@
 namespace App\Patterns\Structural\Composite\Client;
 
 use App\Http\Controllers\Controller;
-use App\Patterns\Structural\Composite\Entities\HomeCat;
-use App\Patterns\Structural\Composite\Entities\Radar;
-use App\Patterns\Structural\Composite\Entities\StreetCat;
+use App\Patterns\Structural\Composite\Entities\HomeAnimal;
+use App\Patterns\Structural\Composite\Entities\Zone;
+use App\Patterns\Structural\Composite\Entities\StreetAnimal;
 
 class CompositeController extends Controller
 {
     public function __invoke(): void
     {
-        $homeCat = new HomeCat(fake()->name());
+        $homeAnimal = new HomeAnimal(fake()->name());
 
-        $streetCat = new StreetCat(fake()->name());
+        $streetAnimal = new StreetAnimal(fake()->name());
 
-        $radar = new Radar();
+        $zone = new Zone();
 
-        $radar->addCat($homeCat);
-
-        $radar->addCat($streetCat);
+        $zone->setAnimals([
+            $homeAnimal,
+            $streetAnimal
+        ]);
 
         pre_output(
-            $radar->render(),
+            $zone->render(),
         );
     }
 }
