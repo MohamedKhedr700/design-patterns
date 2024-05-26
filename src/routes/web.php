@@ -8,6 +8,7 @@ use App\Patterns\Creational\Singleton\Client\SingletonController;
 use App\Patterns\Structural\Adapter\Client\AdapterController;
 use App\Patterns\Structural\Bridge\Client\BridgeController;
 use App\Patterns\Structural\Composite\Client\CompositeController;
+use App\Patterns\Structural\Decorator\Client\DecoratorController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -25,3 +26,4 @@ Route::get('/singleton', SingletonController::class);
 Route::get('/adapter', AdapterController::class);
 Route::get('/bridge', BridgeController::class);
 Route::get('/composite', CompositeController::class);
+Route::get('/decorator', DecoratorController::class);
