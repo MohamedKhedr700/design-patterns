@@ -18,7 +18,6 @@ class AnimalDecorator implements AnimalContract
         return $this->animal;
     }
 
-
     public function render(): string
     {
         return $this->getAnimal()->render();

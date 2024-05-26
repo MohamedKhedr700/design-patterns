@@ -2,11 +2,11 @@
 
 namespace App\Patterns\Structural\Bridge\Client;
 
+use App\Http\Controllers\Controller;
 use App\Patterns\Structural\Bridge\Bridges\Abstraction\Renderer;
 use App\Patterns\Structural\Bridge\Bridges\Implementation\HtmlFormater;
 use App\Patterns\Structural\Bridge\Bridges\Implementation\JsonFormater;
 use App\Patterns\Structural\Bridge\Products\Cat;
-use App\Http\Controllers\Controller;
 
 class BridgeController extends Controller
 {

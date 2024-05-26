@@ -2,8 +2,8 @@
 
 namespace App\Patterns\Creational\Singleton\Client;
 
-use App\Patterns\Creational\Singleton\Singletons\Animal;
 use App\Http\Controllers\Controller;
+use App\Patterns\Creational\Singleton\Singletons\Animal;
 
 class SingletonController extends Controller
 {

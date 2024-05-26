@@ -2,10 +2,10 @@
 
 namespace App\Patterns\Structural\Composite\Client;
 
-use App\Patterns\Structural\Composite\Products\HomeCat;
-use App\Patterns\Structural\Composite\Products\StreetCat;
-use App\Patterns\Structural\Composite\Products\Radar;
 use App\Http\Controllers\Controller;
+use App\Patterns\Structural\Composite\Products\HomeCat;
+use App\Patterns\Structural\Composite\Products\Radar;
+use App\Patterns\Structural\Composite\Products\StreetCat;
 
 class CompositeController extends Controller
 {

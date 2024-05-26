@@ -2,10 +2,10 @@
 
 namespace App\Patterns\Structural\Adapter\Client;
 
+use App\Http\Controllers\Controller;
 use App\Patterns\Structural\Adapter\Adapters\CatAdapter;
 use App\Patterns\Structural\Adapter\Products\HomeCat;
 use App\Patterns\Structural\Adapter\Products\StreetCat;
-use App\Http\Controllers\Controller;
 
 class AdapterController extends Controller
 {

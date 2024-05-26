@@ -2,9 +2,9 @@
 
 namespace App\Patterns\Creational\AbstractFactory\Client;
 
+use App\Http\Controllers\Controller;
 use App\Patterns\Creational\AbstractFactory\Factories\HomeAnimalFactory;
 use App\Patterns\Creational\AbstractFactory\Factories\StreetAnimalFactory;
-use App\Http\Controllers\Controller;
 
 class AbstractFactoryController extends Controller
 {

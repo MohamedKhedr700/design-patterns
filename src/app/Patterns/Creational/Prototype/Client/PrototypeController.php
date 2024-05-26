@@ -2,8 +2,8 @@
 
 namespace App\Patterns\Creational\Prototype\Client;
 
-use App\Patterns\Creational\Prototype\Prototypes\Cat;
 use App\Http\Controllers\Controller;
+use App\Patterns\Creational\Prototype\Prototypes\Cat;
 
 class PrototypeController extends Controller
 {
