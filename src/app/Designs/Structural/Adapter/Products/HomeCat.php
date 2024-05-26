@@ -4,7 +4,7 @@ namespace App\Designs\Structural\Adapter\Products;
 
 use App\Designs\Structural\Adapter\Products\Contracts\HomeCat as HomeCatContract;
 
-class HomeCat extends Cat implements HomeCatContract
+class HomeCat implements HomeCatContract
 {
     private string $name;
 
@@ -16,5 +16,12 @@ class HomeCat extends Cat implements HomeCatContract
     public function getName(): string
     {
         return $this->name;
+    }
+
+    public function __toString()
+    {
+        return
+            'Cat name is '.
+            $this->getName();
     }
 }

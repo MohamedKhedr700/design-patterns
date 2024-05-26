@@ -6,8 +6,8 @@ use App\Designs\Creational\AbstractFactory\Products\Contracts\Cat;
 
 class StreetCat implements Cat
 {
-    public function run(): string
+    public function __toString(): string
     {
-        return 'Street Cat is running';
+        return 'This is a street cat';
     }
 }

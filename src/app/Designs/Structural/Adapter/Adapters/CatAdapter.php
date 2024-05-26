@@ -6,7 +6,7 @@ use App\Designs\Structural\Adapter\Products\Cat;
 use App\Designs\Structural\Adapter\Products\Contracts\HomeCat;
 use App\Designs\Structural\Adapter\Products\Contracts\StreetCat;
 
-class CatAdapter extends Cat implements HomeCat
+class CatAdapter implements HomeCat
 {
     private StreetCat $cat;
 
@@ -18,5 +18,12 @@ class CatAdapter extends Cat implements HomeCat
     public function getName(): string
     {
         return $this->cat->guessName();
+    }
+
+    public function __toString()
+    {
+        return
+            'Cat name is '.
+            $this->getName();
     }
 }

@@ -6,8 +6,8 @@ use App\Designs\Creational\AbstractFactory\Products\Contracts\Cat;
 
 class HomeCat implements Cat
 {
-    public function run(): string
+    public function __toString(): string
     {
-        return 'Home cat is running';
+        return 'This is a home cat';
     }
 }

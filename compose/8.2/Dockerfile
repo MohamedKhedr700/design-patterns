@@ -25,6 +25,8 @@ RUN apk --no-cache add \
     oniguruma \
     oniguruma-dev \
     openssl-dev \
+    sqlite \
+    sqlite-dev \
     zip \
     unzip \
     git \
@@ -33,11 +35,12 @@ RUN apk --no-cache add \
     autoconf \
     linux-headers
 
-#Install PHP extensions
+# Install PHP extensions
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) \
     gd \
     pdo_mysql \
+    pdo_sqlite \
     mbstring \
     zip \
     exif \
@@ -83,4 +86,3 @@ COPY ./rootfs/etc/php82/local.ini /usr/local/etc/php/conf.d/local.ini
 EXPOSE 9000
 
 CMD ["php-fpm"]
-

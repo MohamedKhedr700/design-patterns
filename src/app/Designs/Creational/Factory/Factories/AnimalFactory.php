@@ -8,8 +8,8 @@ abstract class AnimalFactory
 {
     abstract public function getAnimal(): Animal;
 
-    public function runAnimal(): string
+    public function createAnimal(): string
     {
-        return $this->getAnimal()->run();
+        return (string) $this->getAnimal();
     }
 }

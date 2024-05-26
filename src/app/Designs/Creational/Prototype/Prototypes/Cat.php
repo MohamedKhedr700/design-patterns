@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Designs\Creational\Prototype\Products;
+namespace App\Designs\Creational\Prototype\Prototypes;
 
-use App\Designs\Creational\Prototype\Prototypes\Animal;
 use App\Designs\Creational\Prototype\Prototypes\Contracts\Prototype;
 
 class Cat extends Animal implements Prototype
@@ -11,9 +10,9 @@ class Cat extends Animal implements Prototype
 
     public function __construct(string $color)
     {
-        $this->color = $color;
-
         parent::__construct('Cat');
+
+        $this->color = $color;
     }
 
     public function getColor(): string

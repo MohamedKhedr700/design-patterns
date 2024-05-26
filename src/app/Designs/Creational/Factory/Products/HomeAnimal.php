@@ -6,8 +6,8 @@ use App\Designs\Creational\Factory\Products\Contracts\Animal;
 
 class HomeAnimal implements Animal
 {
-    public function run(): string
+    public function __toString(): string
     {
-        return 'Home animal is running';
+        return 'This is a home animal';
     }
 }

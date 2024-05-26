@@ -4,9 +4,14 @@ namespace App\Designs\Creational\AbstractFactory\Client;
 
 use App\Designs\Creational\AbstractFactory\Factories\Contracts\AnimalFactory;
 
-class AbstractFactoryHandler
+class AbstractFactoryManager
 {
     private AnimalFactory $factory;
+
+    public function __construct(AnimalFactory $factory)
+    {
+        $this->setFactory($factory);
+    }
 
     public function setFactory(AnimalFactory $factory): void
     {
@@ -18,11 +23,11 @@ class AbstractFactoryHandler
         return $this->factory;
     }
 
-    public function run(): array
+    public function create(): array
     {
         return [
-            'cat' => $this->getFactory()->createCat()->run(),
-            'dog' => $this->getFactory()->createDog()->run(),
+            'cat' => (string) $this->getFactory()->createCat(),
+            'dog' => (string) $this->getFactory()->createDog(),
         ];
     }
 }

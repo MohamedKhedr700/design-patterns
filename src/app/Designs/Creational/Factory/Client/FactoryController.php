@@ -8,18 +8,18 @@ use App\Http\Controllers\Controller;
 
 class FactoryController extends Controller
 {
-    public function __invoke(FactoryHandler $handler): void
+    public function __invoke(): void
     {
-        $handler->setFactory(new HomeAnimalFactory());
+        $manager = new FactoryManager(new HomeAnimalFactory());
 
         pre_output(
-            $handler->runAnimal(),
+            $manager->create(),
         );
 
-        $handler->setFactory(new StreetAnimalFactory());
+        $manager->setFactory(new StreetAnimalFactory());
 
         pre_output(
-            $handler->runAnimal(),
+            $manager->create(),
         );
     }
 }

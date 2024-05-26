@@ -6,8 +6,8 @@ use App\Designs\Creational\Factory\Products\Contracts\Animal;
 
 class StreetAnimal implements Animal
 {
-    public function run(): string
+    public function __toString(): string
     {
-        return 'Street animal is running';
+        return 'This is a street animal';
     }
 }

@@ -6,8 +6,8 @@ use App\Designs\Creational\AbstractFactory\Products\Contracts\Dog;
 
 class StreetDog implements Dog
 {
-    public function run(): string
+    public function __toString(): string
     {
-        return 'Street dog is running';
+        return 'This is a street dog';
     }
 }

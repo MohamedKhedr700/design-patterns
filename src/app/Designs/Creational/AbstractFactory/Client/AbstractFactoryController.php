@@ -8,18 +8,18 @@ use App\Http\Controllers\Controller;
 
 class AbstractFactoryController extends Controller
 {
-    public function __invoke(AbstractFactoryHandler $handler): void
+    public function __invoke(): void
     {
-        $handler->setFactory(new HomeAnimalFactory());
+        $manager = new AbstractFactoryManager(new HomeAnimalFactory());
 
         pre_output(
-            $handler->run(),
+            $manager->create(),
         );
 
-        $handler->setFactory(new StreetAnimalFactory());
+        $manager->setFactory(new StreetAnimalFactory());
 
         pre_output(
-            $handler->run(),
+            $manager->create(),
         );
     }
 }

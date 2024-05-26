@@ -4,9 +4,14 @@ namespace App\Designs\Creational\Factory\Client;
 
 use App\Designs\Creational\Factory\Factories\AnimalFactory;
 
-class FactoryHandler
+class FactoryManager
 {
     private AnimalFactory $factory;
+
+    public function __construct(AnimalFactory $factory)
+    {
+        $this->setFactory($factory);
+    }
 
     public function setFactory(AnimalFactory $factory): void
     {
@@ -18,8 +23,8 @@ class FactoryHandler
         return $this->factory;
     }
 
-    public function runAnimal(): string
+    public function create(): string
     {
-        return $this->getFactory()->runAnimal();
+        return $this->getFactory()->createAnimal();
     }
 }

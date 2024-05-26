@@ -2,7 +2,7 @@
 
 namespace App\Designs\Creational\Prototype\Client;
 
-use App\Designs\Creational\Prototype\Products\Cat;
+use App\Designs\Creational\Prototype\Prototypes\Cat;
 use App\Http\Controllers\Controller;
 
 class PrototypeController extends Controller

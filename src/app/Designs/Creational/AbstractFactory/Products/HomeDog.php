@@ -6,8 +6,8 @@ use App\Designs\Creational\AbstractFactory\Products\Contracts\Dog;
 
 class HomeDog implements Dog
 {
-    public function run(): string
+    public function __toString(): string
     {
-        return 'Home dog is running';
+        return 'This is a home dog';
     }
 }
