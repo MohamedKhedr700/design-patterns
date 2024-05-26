@@ -3,8 +3,8 @@
 namespace App\Patterns\Structural\Proxy\Client;
 
 use App\Http\Controllers\Controller;
+use App\Patterns\Structural\Proxy\Entities\AnimalService;
 use App\Patterns\Structural\Proxy\Proxies\AnimalProxy;
-use App\Patterns\Structural\Proxy\Proxies\AnimalService;
 use Exception;
 
 class ProxyController extends Controller

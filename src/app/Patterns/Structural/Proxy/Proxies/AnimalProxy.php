@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Structural\Proxy\Proxies;
 
-use App\Patterns\Structural\Proxy\Proxies\Contracts\Animal;
+use App\Patterns\Structural\Proxy\Entities\Contracts\Animal;
 use Exception;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
@@ -32,7 +32,7 @@ class AnimalProxy implements Animal
 
         $this->logAccess();
 
-        return Cache::remember('animals', now()->addMinutes(5), fn () => $this->getAnimal()->list());
+        return Cache::remember('animals', now()->addMinutes(1), fn () => $this->getAnimal()->list());
     }
 
     private function checkAccess(): bool

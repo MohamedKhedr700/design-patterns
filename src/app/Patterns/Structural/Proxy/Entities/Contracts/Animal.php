@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Patterns\Structural\Proxy\Proxies\Contracts;
+namespace App\Patterns\Structural\Proxy\Entities\Contracts;
 
 interface Animal
 {

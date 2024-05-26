@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Patterns\Structural\Proxy\Proxies;
+namespace App\Patterns\Structural\Proxy\Entities;
 
-use App\Patterns\Structural\Proxy\Proxies\Contracts\Animal;
+use App\Patterns\Structural\Proxy\Entities\Contracts\Animal;
 
 class AnimalService implements Animal
 {
@@ -12,7 +12,6 @@ class AnimalService implements Animal
         return [
             'cat',
             'dog',
-            'fish',
         ];
     }
 }
