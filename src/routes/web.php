@@ -7,6 +7,7 @@ use App\Designs\Creational\Prototype\Client\PrototypeController;
 use App\Designs\Creational\Singleton\Client\SingletonController;
 use App\Designs\Structural\Adapter\Client\AdapterController;
 use App\Designs\Structural\Bridge\Client\BridgeController;
+use App\Designs\Structural\Composite\Client\CompositeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -23,3 +24,4 @@ Route::get('/singleton', SingletonController::class);
 // structural
 Route::get('/adapter', AdapterController::class);
 Route::get('/bridge', BridgeController::class);
+Route::get('/composite', CompositeController::class);
