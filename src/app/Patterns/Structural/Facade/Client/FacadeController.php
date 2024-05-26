@@ -4,7 +4,7 @@ namespace App\Patterns\Structural\Facade\Client;
 
 use App\Http\Controllers\Controller;
 use App\Patterns\Structural\Facade\Facades\AnimalFacade;
-use App\Patterns\Structural\Facade\Product\Cat;
+use App\Patterns\Structural\Facade\Entities\Cat;
 
 class FacadeController extends Controller
 {

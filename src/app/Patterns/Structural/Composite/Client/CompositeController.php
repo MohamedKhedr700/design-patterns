@@ -3,9 +3,9 @@
 namespace App\Patterns\Structural\Composite\Client;
 
 use App\Http\Controllers\Controller;
-use App\Patterns\Structural\Composite\Products\HomeCat;
-use App\Patterns\Structural\Composite\Products\Radar;
-use App\Patterns\Structural\Composite\Products\StreetCat;
+use App\Patterns\Structural\Composite\Entities\HomeCat;
+use App\Patterns\Structural\Composite\Entities\Radar;
+use App\Patterns\Structural\Composite\Entities\StreetCat;
 
 class CompositeController extends Controller
 {

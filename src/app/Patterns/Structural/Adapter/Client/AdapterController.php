@@ -4,8 +4,8 @@ namespace App\Patterns\Structural\Adapter\Client;
 
 use App\Http\Controllers\Controller;
 use App\Patterns\Structural\Adapter\Adapters\CatAdapter;
-use App\Patterns\Structural\Adapter\Products\HomeCat;
-use App\Patterns\Structural\Adapter\Products\StreetCat;
+use App\Patterns\Structural\Adapter\Entities\HomeCat;
+use App\Patterns\Structural\Adapter\Entities\StreetCat;
 
 class AdapterController extends Controller
 {

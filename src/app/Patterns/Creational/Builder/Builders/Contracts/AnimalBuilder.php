@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Creational\Builder\Builders\Contracts;
 
-use App\Patterns\Creational\Builder\Products\Animal;
+use App\Patterns\Creational\Builder\Entities\Animal;
 
 interface AnimalBuilder
 {

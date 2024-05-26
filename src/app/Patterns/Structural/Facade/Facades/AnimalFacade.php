@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Structural\Facade\Facades;
 
-use App\Patterns\Structural\Facade\Product\Animal;
+use App\Patterns\Structural\Facade\Entities\Animal;
 
 class AnimalFacade
 {

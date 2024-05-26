@@ -3,7 +3,7 @@
 namespace App\Patterns\Creational\Builder\Directors;
 
 use App\Patterns\Creational\Builder\Builders\Contracts\AnimalBuilder;
-use App\Patterns\Creational\Builder\Products\Animal;
+use App\Patterns\Creational\Builder\Entities\Animal;
 
 class CatDirector
 {

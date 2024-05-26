@@ -3,10 +3,10 @@
 namespace App\Patterns\Creational\AbstractFactory\Factories;
 
 use App\Patterns\Creational\AbstractFactory\Factories\Contracts\AnimalFactory;
-use App\Patterns\Creational\AbstractFactory\Products\Contracts\Cat;
-use App\Patterns\Creational\AbstractFactory\Products\Contracts\Dog;
-use App\Patterns\Creational\AbstractFactory\Products\HomeCat;
-use App\Patterns\Creational\AbstractFactory\Products\HomeDog;
+use App\Patterns\Creational\AbstractFactory\Entities\Contracts\Cat;
+use App\Patterns\Creational\AbstractFactory\Entities\Contracts\Dog;
+use App\Patterns\Creational\AbstractFactory\Entities\HomeCat;
+use App\Patterns\Creational\AbstractFactory\Entities\HomeDog;
 
 class HomeAnimalFactory implements AnimalFactory
 {

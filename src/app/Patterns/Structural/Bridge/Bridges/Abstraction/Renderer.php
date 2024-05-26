@@ -4,7 +4,7 @@ namespace App\Patterns\Structural\Bridge\Bridges\Abstraction;
 
 use App\Patterns\Structural\Bridge\Bridges\Abstraction\Contracts\Renderer as RendererContract;
 use App\Patterns\Structural\Bridge\Bridges\Implementation\Contracts\Formatter;
-use App\Patterns\Structural\Bridge\Products\Cat;
+use App\Patterns\Structural\Bridge\Entities\Cat;
 
 class Renderer implements RendererContract
 {

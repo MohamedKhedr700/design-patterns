@@ -2,8 +2,8 @@
 
 namespace App\Patterns\Structural\Adapter\Adapters;
 
-use App\Patterns\Structural\Adapter\Products\Contracts\HomeCat;
-use App\Patterns\Structural\Adapter\Products\Contracts\StreetCat;
+use App\Patterns\Structural\Adapter\Entities\Contracts\HomeCat;
+use App\Patterns\Structural\Adapter\Entities\Contracts\StreetCat;
 
 class CatAdapter implements HomeCat
 {

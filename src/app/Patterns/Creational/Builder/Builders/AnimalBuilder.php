@@ -3,7 +3,7 @@
 namespace App\Patterns\Creational\Builder\Builders;
 
 use App\Patterns\Creational\Builder\Builders\Contracts\AnimalBuilder as AnimalBuilderContract;
-use App\Patterns\Creational\Builder\Products\Animal;
+use App\Patterns\Creational\Builder\Entities\Animal;
 
 class AnimalBuilder implements AnimalBuilderContract
 {

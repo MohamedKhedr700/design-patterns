@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Patterns\Structural\Bridge\Bridges\Abstraction\Renderer;
 use App\Patterns\Structural\Bridge\Bridges\Implementation\HtmlFormater;
 use App\Patterns\Structural\Bridge\Bridges\Implementation\JsonFormater;
-use App\Patterns\Structural\Bridge\Products\Cat;
+use App\Patterns\Structural\Bridge\Entities\Cat;
 
 class BridgeController extends Controller
 {

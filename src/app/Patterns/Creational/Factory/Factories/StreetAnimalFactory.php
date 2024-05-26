@@ -2,8 +2,8 @@
 
 namespace App\Patterns\Creational\Factory\Factories;
 
-use App\Patterns\Creational\Factory\Products\Contracts\Animal;
-use App\Patterns\Creational\Factory\Products\StreetAnimal;
+use App\Patterns\Creational\Factory\Entities\Contracts\Animal;
+use App\Patterns\Creational\Factory\Entities\StreetAnimal;
 
 class StreetAnimalFactory extends AnimalFactory
 {

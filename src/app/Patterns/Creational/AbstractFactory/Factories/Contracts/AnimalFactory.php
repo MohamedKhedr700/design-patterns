@@ -2,8 +2,8 @@
 
 namespace App\Patterns\Creational\AbstractFactory\Factories\Contracts;
 
-use App\Patterns\Creational\AbstractFactory\Products\Contracts\Cat;
-use App\Patterns\Creational\AbstractFactory\Products\Contracts\Dog;
+use App\Patterns\Creational\AbstractFactory\Entities\Contracts\Cat;
+use App\Patterns\Creational\AbstractFactory\Entities\Contracts\Dog;
 
 interface AnimalFactory
 {
