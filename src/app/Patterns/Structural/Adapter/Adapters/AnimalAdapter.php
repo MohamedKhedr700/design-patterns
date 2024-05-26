@@ -2,14 +2,14 @@
 
 namespace App\Patterns\Structural\Adapter\Adapters;
 
-use App\Patterns\Structural\Adapter\Entities\Contracts\HomeCat;
-use App\Patterns\Structural\Adapter\Entities\Contracts\StreetCat;
+use App\Patterns\Structural\Adapter\Entities\Contracts\HomeAnimal;
+use App\Patterns\Structural\Adapter\Entities\Contracts\StreetAnimal;
 
-class CatAdapter implements HomeCat
+class AnimalAdapter implements HomeAnimal
 {
-    private StreetCat $cat;
+    private StreetAnimal $cat;
 
-    public function __construct(StreetCat $cat)
+    public function __construct(StreetAnimal $cat)
     {
         $this->cat = $cat;
     }

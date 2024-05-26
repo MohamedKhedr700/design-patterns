@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Structural\Adapter\Entities\Contracts;
 
-interface StreetCat
+interface HomeAnimal
 {
-    public function guessName(): string;
+    public function getName(): string;
 }

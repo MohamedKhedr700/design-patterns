@@ -2,9 +2,9 @@
 
 namespace App\Patterns\Structural\Adapter\Entities;
 
-use App\Patterns\Structural\Adapter\Entities\Contracts\StreetCat as StreetCatContract;
+use App\Patterns\Structural\Adapter\Entities\Contracts\StreetAnimal as StreetCatContract;
 
-class StreetCat implements StreetCatContract
+class StreetAnimal implements StreetCatContract
 {
     public function guessName(): string
     {

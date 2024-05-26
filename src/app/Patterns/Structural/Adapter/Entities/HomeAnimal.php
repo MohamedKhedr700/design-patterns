@@ -2,9 +2,9 @@
 
 namespace App\Patterns\Structural\Adapter\Entities;
 
-use App\Patterns\Structural\Adapter\Entities\Contracts\HomeCat as HomeCatContract;
+use App\Patterns\Structural\Adapter\Entities\Contracts\HomeAnimal as HomeCatContract;
 
-class HomeCat implements HomeCatContract
+class HomeAnimal implements HomeCatContract
 {
     private string $name;
 

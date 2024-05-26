@@ -3,24 +3,26 @@
 namespace App\Patterns\Structural\Adapter\Client;
 
 use App\Http\Controllers\Controller;
-use App\Patterns\Structural\Adapter\Adapters\CatAdapter;
-use App\Patterns\Structural\Adapter\Entities\HomeCat;
-use App\Patterns\Structural\Adapter\Entities\StreetCat;
+use App\Patterns\Structural\Adapter\Adapters\AnimalAdapter;
+use App\Patterns\Structural\Adapter\Entities\HomeAnimal;
+use App\Patterns\Structural\Adapter\Entities\StreetAnimal;
 
 class AdapterController extends Controller
 {
     public function __invoke(): void
     {
-        $cat = new HomeCat(fake()->name());
+        $homeAnimal = new HomeAnimal(fake()->name());
 
         pre_output(
-            (string) $cat,
+            (string) $homeAnimal,
         );
 
-        $catAdapter = new CatAdapter(new StreetCat());
+        $streetAnimal = new StreetAnimal();
+
+        $adapter = new AnimalAdapter($streetAnimal);
 
         pre_output(
-            (string) $catAdapter,
+            (string) $adapter,
         );
     }
 }
