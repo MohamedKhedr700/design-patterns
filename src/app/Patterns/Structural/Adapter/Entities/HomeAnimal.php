@@ -21,7 +21,7 @@ class HomeAnimal implements HomeCatContract
     public function __toString()
     {
         return
-            'Cat name is '.
+            'Animal name is '.
             $this->getName();
     }
 }

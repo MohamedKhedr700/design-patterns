@@ -21,6 +21,6 @@ class HomeAnimal implements Animal, Renderable
 
     public function render(): string
     {
-        return 'Cat '.$this->getName().' in the house';
+        return 'Animal '.$this->getName().' in the house';
     }
 }

@@ -18,7 +18,7 @@ class Animal
     public function __toString()
     {
         return
-            'Cat name is '.
+            'Animal name is '.
             $this->name.
             ' and color is '.
             $this->color;

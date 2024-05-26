@@ -21,6 +21,6 @@ class StreetAnimal implements Animal, Renderable
 
     public function render(): string
     {
-        return 'Cat '.$this->getName().' in the street.';
+        return 'Animal '.$this->getName().' in the street.';
     }
 }
