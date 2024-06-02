@@ -2,9 +2,8 @@
 
 namespace App\Patterns\Behavioral\Cor\Entities;
 
-use App\Patterns\Behavioral\Cor\Cors\Handler;
-
 use App\Patterns\Behavioral\Cor\Cors\Contracts\Handler as HandlerContract;
+use App\Patterns\Behavioral\Cor\Cors\Handler;
 use Exception;
 use Illuminate\Http\Request;
 
@@ -19,5 +18,4 @@ class AuthenticateHandler extends Handler implements HandlerContract
             throw new Exception('Authorization failed');
         }
     }
-
 }
