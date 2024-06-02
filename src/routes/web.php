@@ -11,6 +11,7 @@ use App\Patterns\Structural\Composite\Client\CompositeController;
 use App\Patterns\Structural\Decorator\Client\DecoratorController;
 use App\Patterns\Structural\Facade\Client\FacadeController;
 use App\Patterns\Structural\Proxy\Client\ProxyController;
+use App\Patterns\Structural\Registry\Client\RegistryController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -31,3 +32,4 @@ Route::get('/composite', CompositeController::class);
 Route::get('/decorator', DecoratorController::class);
 Route::get('/facade', FacadeController::class);
 Route::get('/proxy', ProxyController::class);
+Route::get('/registry', RegistryController::class);

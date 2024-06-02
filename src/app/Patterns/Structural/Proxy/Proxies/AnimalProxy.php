@@ -32,7 +32,7 @@ class AnimalProxy implements Animal
 
         $this->logAccess();
 
-        return Cache::remember('animals', now()->addMinutes(1), fn () => $this->getAnimal()->list());
+        return Cache::remember('animals', now()->addMinute(), fn () => $this->getAnimal()->list());
     }
 
     private function checkAccess(): bool
