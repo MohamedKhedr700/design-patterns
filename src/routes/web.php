@@ -1,5 +1,6 @@
 <?php
 
+use App\Patterns\Behavioral\Cor\Client\CorController;
 use App\Patterns\Creational\AbstractFactory\Client\AbstractFactoryController;
 use App\Patterns\Creational\Builder\Client\BuilderController;
 use App\Patterns\Creational\Factory\Client\FactoryController;
@@ -17,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// behavioral
+Route::get('/cor', CorController::class);
 
 // creational
 Route::get('/abstract-factory', AbstractFactoryController::class);
