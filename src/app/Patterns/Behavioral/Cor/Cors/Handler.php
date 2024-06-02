@@ -7,12 +7,5 @@ use Illuminate\Http\Request;
 
 abstract class Handler implements HandlerContract
 {
-    protected HandlerContract $next;
-
-    public function setNext(HandlerContract $handler): void
-    {
-        $this->next = $handler;
-    }
-
     abstract public function handle(Request $request);
 }
